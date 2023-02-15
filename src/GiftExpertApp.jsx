@@ -14,11 +14,9 @@ export const GiftExpertApp = () => {
 
   return (
     <>
-    <h1>GiftExpertApp</h1>
+    <h1>GifExpertApp</h1>
     <AddCategory onNewCategory={onAddCategory}/>
-    <button onClick={onAddCategory
-    }>Agregar</button>
-    
+    <button onClick={onAddCategory} aria-label='btn-add'>Agregar</button>
       {categories.map(c=>
         <GifGrid key={c} category={c}/>
         )}
